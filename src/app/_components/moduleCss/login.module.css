@@ -1,0 +1,29 @@
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(146, 144, 148);
+  border-radius: 20px;
+  padding: 50px;
+}
+.button{
+  background-color:#7775D6 ;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input{
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.title{
+  font-size: 60px;
+}

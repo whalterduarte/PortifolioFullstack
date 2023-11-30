@@ -1,0 +1,96 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tanksContainer{
+  display: flex;
+  align-items: center;
+}
+.areaTanks{
+  background-color: aliceblue;
+  height: 300px;
+  border-radius: 5px;
+  margin-right: -5px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.areaTanks h1{
+  margin-bottom: 20px;
+  color: hsl(var(--muted-foreground));
+}
+.areaTanks p{
+  color: hsl(var(--muted-foreground));
+}
+
+
+.areaTanks svg{
+  width: 30%;
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin-top: 20px;
+  background: linear-gradient(to bottom, #5982f3, #5078e9);
+  padding: 30px;
+  border-radius: 10px;
+}
+.formContainer label{
+  margin-left: 10px;
+}
+.alignInput{
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+.text{
+  height: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  outline: none;
+}
+.input input{
+  display: flex;
+  flex-direction: column;
+  margin:10px 5px 5px ;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
+.submit{
+  background-color: #fff;
+  border-radius: 5px;
+  width: 70px;
+  padding: 10px;
+  position: relative;
+  left: 420px;
+  color: hsl(var(--muted-foreground));
+}
+
+@media screen and (max-width: 900px) {
+  .areaTanks{
+    display: none;
+  }
+}
+@media screen and (max-width:600px) {
+  .alignInput{
+    display: flex;
+    flex-direction: column;
+  }
+  .formContainer{
+    width: 100%;
+  }
+  .input input{
+    margin: 0 0 10px;
+    padding: 15px;
+  }
+}
