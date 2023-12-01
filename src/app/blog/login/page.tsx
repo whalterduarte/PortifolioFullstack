@@ -7,7 +7,6 @@ const page = () => {
   return (
     <>
     <div className='absolute z-10'>
-    <Navbar />
     <ModeToggle />
     </div>
     <Login/> 

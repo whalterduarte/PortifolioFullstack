@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
-import styleNav from './navbar.module.css'
 import Link from 'next/link'
 import { navigationLinks } from '@/utils/data';
 
@@ -15,6 +14,7 @@ const Navbar = () => {
 
   const closeMenu = () => {
     setMenuOpen(false);
+    
   };
 
   return (
@@ -25,11 +25,15 @@ const Navbar = () => {
       >
         {isMenuOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
       </button>
+      <div className='fixed top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-4 font-bold'>
+        <Link href={'/blog'}>BLOG</Link>
+      </div>
+
       {isMenuOpen && (
         <div className="absolute top-16 right-4 bg-primary p-4 rounded-md transition-opacity duration-500 ease-in-out opacity-100">
           {navigationLinks.map((link, index)=>(
           <div key={index} className="flex flex-col space-y-4 items-center">
-          <Link href={link.path} className="text-white hover:bg-white hover:text-gray-600 p-2 rounded" onClick={closeMenu}>
+          <Link href={link.path} className="text-white hover:bg-white hover:text-gray-600 p-2 rounded"  onClick={closeMenu}>
             {link.label}
           </Link>
           </div>

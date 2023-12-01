@@ -10,7 +10,7 @@ const Contact = () => {
       return <p>Thank you for getting in touch, your form has been sent successfully.</p>;
   }
   return (
-    <div className={styles.container}>
+    <div  id='contact' className={styles.container}>
        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Get In Touch

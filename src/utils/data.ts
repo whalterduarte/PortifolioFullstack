@@ -1,57 +1,55 @@
 export const navigationLinks =[
   {label:'Home', path: '/'},
-  {label:'About', path: '#'},
-  {label:'Portifólio', path: '#'},
-  {label:'Contact', path: '#'},
-  {label:'Blog', path: '/blog'},
-  {label:'Login', path: '/blog/login'}
+  {label:'About', path: '#about'},
+  {label:'Portfolio', path: '#feature'},
+  {label:'Contact', path: '#contact'},
 ]
 
 export const portifolioData = [
-  {project: 'Blog and portifólio',
+  {project: 'Blog and portfolio',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante Meu blog supMeu blog super interessanteer interessanteMeu blog super interessante Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'face',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'inst',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'inst',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'inst',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'inst',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'inst',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'inst',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
-  {project: 'inst',
+  {project: 'Under construction',
   gitLink: 'https://github.com/whalterduarte',
   reviewLink: 'https://localhost:3000/',
-  aboutProject:'Meu blog super interessante'},
+  aboutProject:'We re in the process of enhancing this section to provide a better experience. Apologies for any inconvenience. Stay tuned for exciting updates!'},
 
  
 ]
