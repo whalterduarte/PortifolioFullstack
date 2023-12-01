@@ -12,7 +12,7 @@ import styles from './_components/moduleCss/home.module.css'
 export default function Home() {
   return (
     <main className={styles.center}>
-      <div >
+      <div className='absolute z-10'>
       <Navbar />
       <ModeToggle />
       </div>
