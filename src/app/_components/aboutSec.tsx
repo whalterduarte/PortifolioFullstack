@@ -45,8 +45,8 @@ const AboutSection = () => {
           </p>
             <div className='mt-6 flex justify-center md:justify-start gap-6'>
               <SocialLink target="_blank" href="https://www.instagram.com/whalterdart/" icon={InstagramIcon}/>
-              <SocialLink target="_blank" href="https://www.linkedin.com/in/whalter-duarte/" icon={GitHubIcon}/>
-              <SocialLink target="_blank" href="https://www.instagram.com/whalterdart/" icon={LinkedInIcon}/>
+              <SocialLink target="_blank" href="https://github.com/whalterduarte" icon={GitHubIcon}/>
+              <SocialLink target="_blank" href="https://www.linkedin.com/in/whalter-duarte/" icon={LinkedInIcon}/>
             </div>
           </div>
         </div>
