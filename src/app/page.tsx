@@ -7,11 +7,12 @@ import MySkills from './_components/myskills'
 import Portifolio from './_components/portifolio'
 import Contact from './_components/contact'
 import Footer from './_components/footer'
+import styles from './_components/moduleCss/home.module.css'
 
 export default function Home() {
   return (
-    <main className="">
-      <div className='absolute z-10'>
+    <main className={styles.center}>
+      <div >
       <Navbar />
       <ModeToggle />
       </div>

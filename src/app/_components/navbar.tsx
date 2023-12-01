@@ -5,6 +5,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next/link'
 import { navigationLinks } from '@/utils/data';
 
+
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -18,16 +19,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`fixed top-0 right-0 m-4  ${isMenuOpen ? 'z-50' : ''}`}>
+    <div  className={`fixed top-0 right-0 m-4 ${isMenuOpen ? 'z-50 ' : ''}`}    >
       <button
         className="text-white p-2 bg-primary rounded-full transition-transform duration-500 ease-in-out transform hover:scale-110"
         onClick={toggleMenu}
       >
         {isMenuOpen ? <FiX className="h-6 w-6" /> : <FiMenu className="h-6 w-6" />}
       </button>
-      <div className='fixed top-3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 m-4 font-bold'>
-        <Link href={'/blog'}>BLOG</Link>
-      </div>
+     
 
       {isMenuOpen && (
         <div className="absolute top-16 right-4 bg-primary p-4 rounded-md transition-opacity duration-500 ease-in-out opacity-100">
