@@ -12,13 +12,13 @@ const Footer = () => {
             </h1>
             <p className={styles.link}> &copy; 2023. All rights reserved.</p>
           </div>
-          <div className={styles.items}>
+          <div className={styles.itemsBlog}>
              <h1 className={styles.title}>Blog</h1>
               <Link className={styles.link} href={'/blog'}>Tech</Link>
               <Link className={styles.link} href={'/blog'}>Coffees</Link>
               <Link className={styles.link} href={'/blog'}>Social</Link>
           </div>
-         <div className={styles.items}>
+         <div className={styles.itemsSocial}>
              <h1 className={styles.title}>Social Midia</h1>
               <Link className={styles.link} href={'https://www.instagram.com/whalterdart/'}>Instagram</Link>
               <Link className={styles.link} href={'https://www.linkedin.com/in/whalter-duarte'}>Linkedin</Link>

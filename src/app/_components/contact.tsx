@@ -7,7 +7,12 @@ const Contact = () => {
 
   const [state, handleSubmit] = useForm("mqkvvgvj");
   if (state.succeeded) {
-      return <p>Thank you for getting in touch, your form has been sent successfully.</p>;
+      return <div className={styles.containerform}>
+      <div>
+        <h1 className="font-heading text-3xl">Email successfully sent! 📬  <br /> Please monitor your 
+          inbox for further communication.</h1>
+      </div>
+      </div>;
   }
   return (
     <div  id='contact' className={styles.container}>

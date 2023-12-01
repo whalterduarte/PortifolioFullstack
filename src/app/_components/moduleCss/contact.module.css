@@ -3,7 +3,22 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 100px;
+  min-height: 500px;
+  height: 600px;
 }
+
+.containerform{
+  height: 600px;
+  min-height: 500px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.containerform h1{
+  text-align: center;
+}
+
 .tanksContainer{
   display: flex;
   align-items: center;
@@ -86,6 +101,9 @@ justify-content: center;
   .alignInput{
     display: flex;
     flex-direction: column;
+  }
+  .submit{
+    position: static;
   }
   .formContainer{
     width: 100%;
