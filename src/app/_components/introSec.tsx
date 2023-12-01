@@ -59,7 +59,7 @@ const Intro = () => {
         <a className='bg-primary py-2 px-4 text-md text-white rounded shadow-lg font-bold' 
         target="_blank"
         rel="noopener noreferrer"
-        href="https://whalter.com.br/WhalterDEV.pdf">Curriculum vitae</a>
+        href="/WhalterDev.pdf">Curriculum vitae</a>
         <a className={cn(buttonVariants({variant: 'outline', size:'lg'}))} 
         target="_blank"
         rel="noopener noreferrer"
