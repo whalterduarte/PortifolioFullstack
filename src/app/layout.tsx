@@ -17,7 +17,7 @@ const fontHeading = localFont({
 })
 
 export const metadata: Metadata = {
-  title: 'Portifólio | Whalter Duarte',
+  title: 'Portfólio | Whalter Duarte',
   description: 'Developer Full-Stack | Node.JS | React | ',
   keywords: [
     "Next.js",
