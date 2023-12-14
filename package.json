@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsc && npm install tailwindcss && npm install autoprefixer && next build",
+    "build": "tsc && npm install && npm install autoprefixer && next build",
     "start": "next start",
     "lint": "next lint"
   },
