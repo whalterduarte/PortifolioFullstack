@@ -1,0 +1,301 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/blog/_components/moduleCss/coffee.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.coffee_container__9G_Ms{
+  max-width: 1024px;
+  width: 100%;
+  background-color: hsl(var(--background));
+  padding: 50px;
+  border-radius: 30px;;
+  border-top: 10px solid #4b4c4e; 
+  margin: 0 auto 40px auto;
+  
+}
+.coffee_catalizer__idgSH{
+  background-color: #5078e9;
+  
+}
+
+
+.coffee_title__SSzWb{
+  font-size: 2rem;
+}
+.coffee_cont__3ZWuo{
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 20px;
+}
+
+
+.coffee_link__WDo7J {
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; 
+  width: 150px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  color: #4DA3DB;
+  background-color: #5078e9;
+ 
+}
+.coffee_link__WDo7J:hover {
+  color: #5078e9;
+  text-decoration: line-through;
+  background-color: #4b4c4e;
+  
+}
+.coffee_dateAuthor__MDr3P {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coffee_dateAuthor__MDr3P p {
+  color: rgb(192, 187, 187);
+}
+.coffee_dateAuthor__MDr3P span {
+  color: rgb(96, 96, 107);
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/blog/_components/moduleCss/blog.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+.blog_container__aASoR{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/blog/_components/moduleCss/latest.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+.latest_container__GsKUJ{
+  margin-top: 80px;
+
+}
+.latest_session__Wkd1W{
+  height: 400px;
+  background: linear-gradient(to bottom, #8190b8, #5078e9);
+  -webkit-clip-path: polygon(0 21%, 100% 0, 100% 79%, 0 100%);
+          clip-path: polygon(0 21%, 100% 0, 100% 79%, 0 100%);
+  overflow-x: hidden;
+  
+}
+
+.latest_centralize__ySp75{
+  margin-top: 100px;
+ 
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/_components/moduleCss/footer.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.footer_container__AHd2d{
+  background-color: #5078e9;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 270px;
+  margin-top: 100px;
+}
+
+.footer_footer__cvbri{
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.footer_title__hYeFb{
+  color: #fff;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.footer_itemsBlog__qF4o8{
+  display: flex;
+  flex-direction: column;
+}
+.footer_itemsSocial__DUMEX{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_link__ztieT{
+  color: #d3d1d1;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 700px) {
+  .footer_itemsSocial__DUMEX{
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer_itemsBlog__qF4o8{
+    display: none;
+  }
+  .footer_container__AHd2d{
+    height: 200px;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/blog/_components/moduleCss/category.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************/
+.category_container__nvCou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1024px;
+  min-width: 300px;
+  width: 80%;
+  margin: 0 auto 100px auto;
+  height: 300px;
+}
+
+.category_main__uyqRS {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.category_link__Cx5P1 {
+  width: 100%; 
+  max-width: 400px;
+  margin-left: 10px;
+}
+
+.category_link__Cx5P1 a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.category_link__Cx5P1:nth-child(1) a {
+  background-color: #FF5733;
+}
+
+.category_link__Cx5P1:nth-child(2) a {
+  background-color: #1F78B4;
+}
+
+.category_link__Cx5P1:nth-child(3) a {
+  background-color: #8A2BE2;
+}
+
+.category_link__Cx5P1:nth-child(4) a {
+  background-color: #553572;
+}
+
+.category_link__Cx5P1:nth-child(1) a:hover {
+  background-color: #FF8C66;
+}
+
+.category_link__Cx5P1:nth-child(2) a:hover {
+  background-color: #4DA3DB;
+}
+
+.category_link__Cx5P1:nth-child(3) a:hover {
+  background-color: #B98BFF;
+}
+
+.category_link__Cx5P1:nth-child(4) a:hover {
+  background-color: #633b88;
+}
+
+@media screen and (max-width: 550px) {
+  .category_main__uyqRS {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .category_link__Cx5P1 {
+    max-width: none;
+  }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./src/app/blog/_components/moduleCss/tech.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+.tech_container__6xywE{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.tech_session__h5Cf_{
+  overflow-x: hidden;
+  margin-bottom: 100px;
+  max-width: 1024px;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 30px;
+  border-top: 10px solid #5078e9; 
+  
+}
+
+.tech_mainTech__hEx10{
+  display: flex;
+}
+.tech_containerContent__mLN0m{
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+}
+.tech_img__y_aEG{
+  margin-top: 10px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 500px;
+  height: 250px;
+}
+.tech_title__ZzL1m{
+  font-size: 2rem;
+  margin-bottom: 5px;
+  text-align: start;
+ 
+}
+.tech_content__DECSU{
+  color: hsl(var(--muted-foreground));
+  max-width: 500px;
+}
+.tech_tech__SFRzr{
+  margin-bottom: 40px;
+}
+
+.tech_containerPagination__5yCPX{
+  display: flex;
+  justify-content: space-around;
+  max-width: 500px;
+  margin-top: 20px;
+  align-items: center;
+}
+.tech_button__poPPu{
+  background-color: #5078e9;
+  padding: 10px;
+  border-radius: 5px;
+}
+.tech_button__poPPu:hover{
+  background-color: #2f61ec;
+}
+.tech_pagination__xiXui button {
+  margin-right: 10px;
+  color: hsl(var(--muted-foreground));
+}
+.tech_currentPage__5_8I3 {
+  background-color: #0070f3; 
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 775px) {
+  .tech_mainTech__hEx10{
+    display: flex;
+    flex-direction: column;
+  }
+}
