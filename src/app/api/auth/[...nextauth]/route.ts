@@ -1,7 +1,9 @@
+// Importando os módulos necessários
 import { NextApiRequest, NextApiResponse } from 'next';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
+// Configurando as opções do NextAuth
 const options: NextAuthOptions = {
   providers: [
     CredentialsProvider({
@@ -47,15 +49,14 @@ const options: NextAuthOptions = {
   }
 };
 
-export default NextAuth(options);
+// Exportando a função handler, necessária para a API Route
+export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+  return NextAuth(req, res, options);
+}
 
+// Configurações adicionais para a API Route
 export const config = {
   api: {
     bodyParser: false,
   },
 };
-
-// Remova a exportação padrão da função handler
-export async function handler(req: NextApiRequest, res: NextApiResponse) {
-  return NextAuth(req, res, options);
-}
