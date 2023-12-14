@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsc && next build",
+    "build": "tsc && npm install tailwindcss && next build ",
     "start": "next start",
     "lint": "next lint"
   },
