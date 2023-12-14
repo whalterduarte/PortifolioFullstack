@@ -10,8 +10,7 @@
 /coverage
 
 # next.js
-# .vercelignore
-!/.next/
+/.next/
 /out/
 
 # production
