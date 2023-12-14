@@ -1,4 +1,5 @@
-import NextAuth, { NextAuthOptions } from "next-auth";
+import { NextApiRequest, NextApiResponse } from 'next';
+import NextAuth, { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
 const options: NextAuthOptions = {
@@ -9,7 +10,6 @@ const options: NextAuthOptions = {
         email: { label: 'email', type: 'text' },
         password: { label: 'password', type: 'password' }
       },
-
       async authorize(credentials, req) {
         const response = await fetch(`${process.env.BASEAPI}/login`, {
           method: 'POST',
@@ -47,6 +47,15 @@ const options: NextAuthOptions = {
   }
 };
 
-const handler = NextAuth(options);
+export default NextAuth(options);
 
-export default handler;
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
+
+// Remova a exportação padrão da função handler
+export async function handler(req: NextApiRequest, res: NextApiResponse) {
+  return NextAuth(req, res, options);
+}
