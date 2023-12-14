@@ -2,11 +2,12 @@
   "name": "landingpage",
   "version": "0.1.0",
   "private": true,
-  "build": "tsc && npm install",
-  "postbuild": "npm run build:styles && npm run audit-fix && next build",
-  "build:styles": "npm install tailwindcss autoprefixer && npm install react-quill@2.0.0",
-  "audit-fix": "npm audit fix --force"
-  ,
+  "scripts": {
+    "dev": "next dev",
+    "build": "tsc && npm install tailwindcss && npm install autoprefixer && npm install react-quill@2.0.0 && npm audit fix --force && next build ",
+    "start": "next start",
+    "lint": "next lint"
+  },
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@radix-ui/react-accordion": "^1.1.2",
