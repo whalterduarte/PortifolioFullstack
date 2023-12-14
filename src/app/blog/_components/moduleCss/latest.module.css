@@ -1,0 +1,16 @@
+.container{
+  margin-top: 80px;
+
+}
+.session{
+  height: 400px;
+  background: linear-gradient(to bottom, #8190b8, #5078e9);
+  clip-path: polygon(0 21%, 100% 0, 100% 79%, 0 100%);
+  overflow-x: hidden;
+  
+}
+
+.centralize{
+  margin-top: 100px;
+ 
+}

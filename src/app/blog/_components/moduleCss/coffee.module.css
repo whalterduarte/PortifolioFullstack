@@ -1,0 +1,53 @@
+.container{
+  max-width: 1024px;
+  width: 100%;
+  background-color: hsl(var(--background));
+  padding: 50px;
+  border-radius: 30px;;
+  border-top: 10px solid #4b4c4e; 
+  margin: 0 auto 40px auto;
+  
+}
+.catalizer{
+  background-color: #5078e9;
+  
+}
+
+
+.title{
+  font-size: 2rem;
+}
+.cont{
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 20px;
+}
+
+
+.link {
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; 
+  width: 150px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  color: #4DA3DB;
+  background-color: #5078e9;
+ 
+}
+.link:hover {
+  color: #5078e9;
+  text-decoration: line-through;
+  background-color: #4b4c4e;
+  
+}
+.dateAuthor {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dateAuthor p {
+  color: rgb(192, 187, 187);
+}
+.dateAuthor span {
+  color: rgb(96, 96, 107);
+}

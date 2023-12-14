@@ -5,6 +5,7 @@ import localFont from 'next/font/local'
 import { cn } from '@/lib/utils'
 
 import './globals.css'
+import NextAuthSessionProvider from '@/providers/sessionProvider'
 
 
 const fontSans = FontSans({
@@ -50,7 +51,7 @@ export default function RootLayout({
         fontHeading.variable
       )}>
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
-         {children}
+         <NextAuthSessionProvider>{children}</NextAuthSessionProvider>
         </ThemeProvider>
         
       </body>
