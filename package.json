@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "tsc",
-    "deploy": "npm run build && npm ci && npm start",
+    "build": "tsc && next build",
+    "deploy": "npm ci",
     "start": "next start",
     "lint": "next lint"
   },
