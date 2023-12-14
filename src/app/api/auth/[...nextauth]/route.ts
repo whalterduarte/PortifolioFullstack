@@ -60,3 +60,10 @@ export const config = {
     bodyParser: false,
   },
 };
+
+// Exportando função getServerSideProps como exemplo (ajuste conforme necessário)
+export async function getServerSideProps() {
+  return {
+    props: {}, // Pode ser vazio ou conter dados iniciais
+  };
+}
