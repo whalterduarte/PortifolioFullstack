@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "tsc",
-    "deploy": "npm run build && npm start",
+    "deploy": "npm run build && npm ci && npm start",
     "start": "next start",
     "lint": "next lint"
   },
