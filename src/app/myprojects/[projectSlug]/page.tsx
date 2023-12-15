@@ -56,8 +56,8 @@ const Details = ({ params }: Props) => {
                 className={styles.image}
                 src={project.url}
                 alt="Project"
-                width={400} 
-                height={400} 
+                width={500} 
+                height={400}
                  />
   
               </div>
