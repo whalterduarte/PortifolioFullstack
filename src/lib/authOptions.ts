@@ -1,6 +1,6 @@
+/*
 import CredentialsProvider from 'next-auth/providers/credentials'
 import { NextAuthOptions } from 'next-auth'
-import NextAuth from 'next-auth/next'
 
 export const nextAuthOptions: NextAuthOptions = {
   providers: [
@@ -47,4 +47,5 @@ export const nextAuthOptions: NextAuthOptions = {
    }
  }
 }
-export default NextAuth(nextAuthOptions)
+
+*/
