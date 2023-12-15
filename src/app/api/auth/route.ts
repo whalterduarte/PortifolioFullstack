@@ -1,7 +1,5 @@
-import NextAuth from "next-auth"
+import NextAuth, { NextAuthOptions } from "next-auth"
 import CredentialsProvider from 'next-auth/providers/credentials'
-import { NextAuthOptions } from 'next-auth'
-
 
 export const nextAuthOptions: NextAuthOptions = {
   providers: [
@@ -13,7 +11,7 @@ export const nextAuthOptions: NextAuthOptions = {
      },
 
      async authorize(credentials, req) {
-       const response = await fetch(`/login`, {
+       const response = await fetch(`https://backendport-louz.onrender.com/login`, {
          method: 'POST',
          headers: {
            'Content-type': 'application/json'
@@ -50,8 +48,8 @@ export const nextAuthOptions: NextAuthOptions = {
 }
 
 
+
+
 const handler = NextAuth(nextAuthOptions)
-
-
 
 export { handler as GET, handler as POST }
