@@ -4,7 +4,6 @@ module.exports = {
   },
   experimental: { esmExternals: true },
   typescript: {
-    // Configurações específicas do TypeScript para o Next.js
     ignoreBuildErrors: true,
   },
 };
