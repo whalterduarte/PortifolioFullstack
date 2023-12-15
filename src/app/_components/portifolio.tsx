@@ -6,9 +6,27 @@ import 'slick-carousel/slick/slick-theme.css';
 import styles from './moduleCss/portifolio.module.css';
 import { portifolioData } from '@/utils/data';
 import {  GitHubIcon } from '@/components/social-icons'
-import Link from 'next/link';
+import { project } from '@/types/project'
+import Link from 'next/link'
+import axios from 'axios'
 
-const Portifolio = () => {
+const Portifolio: React.FC  = () => {
+  const [projects, setProjects] = useState<project[]>([])
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get<{ projects: project[] }>(`https://backendport-louz.onrender.com/projects`)
+        
+        setProjects(response.data.projects);
+      } catch (error) {
+        console.error('Erro ao buscar dados:', error);
+      }
+    }
+    fetchData();
+  }, []);
+
 
   function SocialLink({icon: Icon, ...props}: any){
     return(
@@ -21,19 +39,17 @@ const Portifolio = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slidesToShow, setSlidesToShow] = useState(5);
 
-  const updateSlidesToShow = () => {
-    
-    if (window.innerWidth <= 1750) {
-      setSlidesToShow(4);
-      if (window.innerWidth <= 1450){
-        setSlidesToShow(3)
+    const updateSlidesToShow = () => {
+      if (window.innerWidth >= 1450){
+          setSlidesToShow(3)
+        }
+      if(window.innerWidth <= 1350) {
+        setSlidesToShow(2)
+      }  
+      if(window.innerWidth <= 900){
+        setSlidesToShow(1)
       }
-    } if (window.innerWidth <= 900) {
-      setSlidesToShow(2);
-    } if(window.innerWidth <= 725) {
-      setSlidesToShow(1);
     }
-  };
 
   useEffect(() => {
     window.addEventListener('resize', updateSlidesToShow);
@@ -66,16 +82,31 @@ const Portifolio = () => {
       </div>
       <div className={styles.container}>
         <div className={styles.main}>
-         
+        {projects.length > 0 && (
           <Slider {...settings} className={styles.slider}>
-            {portifolioData.map((data, index) => (
-              <div className={styles.card} key={index}>
-                <div className={styles.title}>{data.project}</div>
-                <div className={styles.aboutProject}>{data.aboutProject}</div>
-                <div className={styles.gitLink}><SocialLink target="_blank" href="https://www.linkedin.com/in/whalter-duarte/" icon={GitHubIcon}/></div>
+          {projects.map((data) => (
+            <div className={styles.card} key={data.id}>
+              <div className={styles.title}>{data.title}</div>
+              <div className={styles.aboutProject}>{data.descproject}</div>
+              <div className={styles.linksContainer}>
+                <div className={styles.gitLink}>
+                  <SocialLink target="_blank" href={data.linkgit} icon={GitHubIcon}/>
+                </div>
+                <div className={styles.detailsLink}>
+                  <Link href={`/myprojects/${data.slug}`} passHref>
+                    <button className={styles.detailsButton}>Details</button>
+                  </Link>
+                </div>
+                <div className={styles.onlineLink}>
+                  <Link href={data.linkproject} passHref>
+                    <button className={styles.onlineButton}>View</button>
+                  </Link>
+                </div>
               </div>
-            ))}
-          </Slider>
+            </div>
+          ))}
+        </Slider>
+              )}
         </div>
         <div className={styles.dotsContainer}>
           {portifolioData.map((_, index) => (
@@ -93,4 +124,4 @@ const Portifolio = () => {
   );
 };
 
-export default Portifolio;
+export default Portifolio

@@ -1,0 +1,137 @@
+.container{
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.main{
+  background-color:#fff;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 1024px;
+  margin: auto;
+
+}
+.postsLink{
+  margin-bottom: 50px;
+}
+.title{
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: rgb(122, 79, 221);
+  font-weight: 800;
+  
+}
+.content{
+  margin-bottom: 20px;
+  color: hsl(var(--muted-foreground));
+}
+
+.dateAuthor {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.dateAuthor p {
+  color: rgb(192, 187, 187);
+}
+.dateAuthor span {
+  color: rgb(96, 96, 107);
+}
+.fix{
+  max-width: 1024px;
+  margin: auto;
+  margin-top: 150px;
+  width: 100%;
+}
+.catLink{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  
+}
+.links  {
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; 
+  width: 150px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  color: #4DA3DB;
+  background-color: #5078e9;
+  
+}
+.links:hover {
+  color: #5078e9;
+  text-decoration: line-through;
+  background-color: #4b4c4e;
+  
+}
+.authorDateArea{
+  display: flex;
+  justify-content: space-between;
+
+}
+.link {
+  width: 100%; 
+  max-width: 400px;
+  margin-left: 10px;
+}
+
+.link a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+}
+
+.link:nth-child(1) a {
+  background-color: #FF5733;
+}
+
+.link:nth-child(2) a {
+  background-color: #1F78B4;
+}
+
+.link:nth-child(3) a {
+  background-color: #8A2BE2;
+}
+
+.link:nth-child(4) a {
+  background-color: #553572;
+}
+
+.link:nth-child(1) a:hover {
+  background-color: #FF8C66;
+}
+
+.link:nth-child(2) a:hover {
+  background-color: #4DA3DB;
+}
+
+.link:nth-child(3) a:hover {
+  background-color: #B98BFF;
+}
+
+.link:nth-child(4) a:hover {
+  background-color: #633b88;
+}
+
+@media screen and (max-width:550px) {
+  .catLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+  }
+}

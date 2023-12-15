@@ -1,32 +1,32 @@
 .container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 700px;
-  width: 100%;
-  min-width: 100%;
   background: linear-gradient(to bottom, #8190b8, #5078e9);
   clip-path: polygon(0 21%, 100% 0, 100% 79%, 0 100%);
   overflow-x: hidden;
-  
 }
 
 .main {
   margin: auto;
-  max-width: 112%;
-
+  max-width: 1700px;
+  min-width: 400px;
+ 
 }
 
 .card {
   padding: 20px;
   width: 200px;
-  max-width: 400px;
+  max-width: 550px;
   max-height: 400px;
   min-height: 300px;
   border-radius: 15px;
   background-color: #f5f8f8;
   transition: transform 0.3s ease;
+  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto; 
+  display: flex;
 }
 
 .social{
@@ -38,13 +38,7 @@
   fill:aliceblue;
  
 }
-.gitLink{
-  height: 50px;
-  max-width: 50px;
-  position: absolute;
-  z-index: 1;
-  bottom: 30px;
-}
+
 
 .title {
   padding: 10px;
@@ -54,41 +48,158 @@
 
 .aboutProject {
   margin: auto;
+  height: 400px;
   max-height: 200px;
   text-align: center;
   color: hsl(var(--muted-foreground));
   
 }
+.linksContainer {
+  display: flex;
+  
+}
 
 
 
-@media screen and (max-width: 1350px) {
+
+.gitLink, .detailsLink, .onlineLink {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  margin-left: 20px;
+}
+
+.detailsButton, .onlineButton {
+  
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100px;
+}
+
+.detailsButton:hover, .onlineButton:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+@media screen and (max-width: 1650px) {
   .card{
-    max-width: 400px;
+    max-width: 500px;
   }
  
 }
 
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1500px) {
   .card{
-    max-width: 300px;
+    max-width: 450px;
+  }
+ 
+}
+
+@media screen and (max-width: 1350px) {
+  .card{
+    max-width: 630px;
+    margin-left: 20px;
+  }
+ 
+}
+@media screen and (max-width: 1260px) {
+  .card{
+    max-width: 550px;
+    margin-left: 20px;
+  }
+ 
+}
+
+@media screen and (max-width: 1100px) {
+  .card{
+    max-width: 500px;
+    margin-left: 20px;
+  }
+ 
+}
+@media screen and (max-width: 1000px) {
+  .card{
+    max-width: 450px;
+    margin-left: 20px;
   }
  
 }
 
 @media screen and (max-width: 900px) {
   .card{
-    max-width: 360px;
+    max-width: 800px;
+    position: relative;
+    left: 3%;
   }
  
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 850px) {
   .card{
-    max-width: 90%;
+    max-width: 700px;
+    position: relative;
+
+  }
+ 
+}
+
+@media screen and (max-width: 800px) {
+  .card{
+    max-width: 600px;
+    position: relative;
+    left: 3%;
+  }
+ 
+}
+
+@media screen and (max-width: 650px) {
+  .card{
+    max-width: 400px;
+    position: relative;
+  }
+  .detailsLink, .onlineLink {
+    margin-left: 30px;  
+  }
+  
+}
+
+@media screen and (max-width: 450px) {
+  .card{
+    max-width: 360px;
+    position: relative;
+  }
+  .detailsLink, .onlineLink {
+    margin-left: 50px;  
     
   }
+
+  .gitLink, .detailsLink, .onlineLink {
+    width: 55px;
+    padding: 2px;
+  }
+ 
+}
+@media screen and (max-width: 375px) {
+  .card{
+    max-width: 340px;
+    position: relative;
+    
+  }
+  .detailsLink, .onlineLink {
+    margin-left: 50px;  
+  }
+ .linksContainer{
+  position: relative;
+  right: 30px;
+ }
  
 }

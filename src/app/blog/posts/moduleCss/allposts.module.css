@@ -1,0 +1,64 @@
+.container{
+  max-width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.main{
+  background-color:#fff;
+  width: 100%;
+  border-radius: 20px;
+  padding: 20px;
+
+}
+.postsLink{
+  margin-bottom: 50px;
+}
+.title{
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: rgb(122, 79, 221);
+  font-weight: 800;
+  
+}
+.content{
+  margin-bottom: 20px;
+  color: hsl(var(--muted-foreground));
+}
+
+.dateAuthor {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.dateAuthor p {
+  color: rgb(192, 187, 187);
+}
+.dateAuthor span {
+  color: rgb(96, 96, 107);
+}
+.link  {
+  padding: 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease; 
+  width: 150px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  color: #4DA3DB;
+  background-color: #5078e9;
+  
+}
+.link:hover {
+  color: #5078e9;
+  text-decoration: line-through;
+  background-color: #4b4c4e;
+  
+}
+.authorDateArea{
+  display: flex;
+  justify-content: space-between;
+
+}
