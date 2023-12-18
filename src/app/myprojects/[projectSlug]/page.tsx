@@ -52,13 +52,7 @@ const Details = ({ params }: Props) => {
             
             <div className={styles.imgContent}>
               <div className={styles.img}>
-              <Image
-                className={styles.image}
-                src={project.url}
-                alt="Project"
-                width={500} 
-                height={400}
-                 />
+              <img src={project.url} alt="" />
   
               </div>
               <div className={styles.desc}>
