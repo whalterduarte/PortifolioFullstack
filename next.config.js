@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ["backendport-louz.onrender.com"],
+    domains: ["https://galleryportwhalter.s3.sa-east-1.amazonaws.com"],
   },
   experimental: { esmExternals: true },
   typescript: {
