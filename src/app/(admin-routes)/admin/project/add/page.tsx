@@ -67,7 +67,7 @@ function ProjectForm() {
       formData.append('slug', projectData.slug);
       formData.append('linkproject', projectData.linkproject);
 
-      const response = await axios.post('http://127.0.0.1:2005/project/add', formData);
+      const response = await axios.post('https://api-whalter.vercel.app/project/add', formData);
 
       console.log('Resposta da API:', response.data);
     } catch (error) {

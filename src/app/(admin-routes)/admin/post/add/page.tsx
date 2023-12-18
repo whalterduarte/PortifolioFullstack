@@ -71,7 +71,7 @@ function ProjectForm() {
       formData.append('author', projectData.author);
       formData.append('categoryId', projectData.categoryId);
 
-      const response = await axios.post('http://localhost:2005/blog/admin/newpost', formData);
+      const response = await axios.post('https://api-whalter.vercel.app/blog/admin/newpost', formData);
 
       console.log('Resposta da API:', response.data);
     } catch (error) {

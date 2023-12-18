@@ -11,7 +11,7 @@ export const nextAuthOptions: NextAuthOptions = {
      },
 
      async authorize(credentials, req) {
-       const response = await fetch(`https://backendport-louz.onrender.com/login`, {
+       const response = await fetch(`https://api-whalter.vercel.app/login`, {
          method: 'POST',
          headers: {
            'Content-type': 'application/json'

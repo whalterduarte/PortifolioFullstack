@@ -17,7 +17,7 @@ const Portifolio: React.FC  = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<{ projects: project[] }>(`https://backendport-louz.onrender.com/projects`)
+        const response = await axios.get<{ projects: project[] }>(`https://api-whalter.vercel.app/projects`)
         
         setProjects(response.data.projects);
       } catch (error) {

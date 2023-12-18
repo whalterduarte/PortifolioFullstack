@@ -24,7 +24,7 @@ const AllPosts: React.FC = () => {
   useEffect(() => {
     const fetchAllPosts = async () => {
       try {
-        const response = await axios.get(`https://backendport-louz.onrender.com/blog/posts`)
+        const response = await axios.get(`https://api-whalter.vercel.app/blog/posts`)
         
         if (response.data && response.data.posts) {
           setAllPosts(response.data.posts)
