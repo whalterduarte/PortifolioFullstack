@@ -56,7 +56,7 @@ const Postpage = ({ params, body }: Props) => {
           <div className={styles.cardPost}>
           {post && (<div className={styles.title}><h1>{post.title}</h1></div>)}
           <div className={styles.contImg}>
-            {post && (<div >< Image className={styles.img} src={post.url} alt={post.title} width={400} height={300} /></div>)}
+            {post && (<div ><img className={styles.img} src={post.url} alt={post.title} width={400} height={300} /></div>)}
             <div className={styles.conteudo}>{post?.content}</div>
             
           </div>
