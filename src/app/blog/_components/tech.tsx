@@ -61,7 +61,7 @@ const Tech: React.FC = () => {
             {/* Área do post */}
             <div className={styles.mainTech}>
               <div>
-                <Image className={styles.img} src={post.url} alt={post.title} width={500} height={300} />
+                <img className={styles.img} src={post.url} alt={post.title} width={500} height={300} />
               </div>
               <div className={styles.containerContent}>
                 <div className={styles.title}>{post.title}</div>
