@@ -4,6 +4,7 @@ import axios from 'axios';
 import dynamic from 'next/dynamic';
 import 'react-quill/dist/quill.snow.css';
 
+
 const ReactQuill = dynamic(() => import('react-quill'), { ssr: false });
 
 interface ProjectData {
@@ -67,7 +68,7 @@ function ProjectForm() {
       formData.append('slug', projectData.slug);
       formData.append('linkproject', projectData.linkproject);
 
-      const response = await axios.post('https://api-whalter.vercel.app/project/add', formData);
+      const response = await axios.post(`https://www.api.whalter.com.br/project/add`, formData);
 
       console.log('Resposta da API:', response.data);
     } catch (error) {

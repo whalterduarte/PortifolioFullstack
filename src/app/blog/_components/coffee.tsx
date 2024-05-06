@@ -20,7 +20,7 @@ const Coffee: React.FC = () => {
   useEffect(() => {
     const fetchCoffees = async () => {
       try {
-        const response = await axios.get(`https://api-whalter.vercel.app/blog/posts/coffees`)
+        const response = await axios.get(`https://www.api.whalter.com.br/blog/posts/coffees`)
         if (response.data && response.data.posts) {
           setCoffees(response.data.posts);
         } else {

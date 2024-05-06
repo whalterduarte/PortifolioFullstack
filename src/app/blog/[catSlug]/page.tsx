@@ -27,7 +27,7 @@ const Category = ({params}:Props) => {
   useEffect(() => {
     const fetchCategory = async () => {
       try {
-        const response = await axios.get(`https://api-whalter.vercel.app/blog/posts/${params.catSlug}`)
+        const response = await axios.get(`https://www.api.whalter.com.br/blog/posts/${params.catSlug}`)
         if (response.data && response.data.posts) {
           setCategory(response.data.posts)
           console.log(response.data.posts)

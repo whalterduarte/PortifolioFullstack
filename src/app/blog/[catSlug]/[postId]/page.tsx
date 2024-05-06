@@ -33,7 +33,7 @@ const Postpage = ({ params, body }: Props) => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`https://api-whalter.vercel.app/blog/posts/${params.catSlug}/${params.postId}`); 
+        const response = await axios.get(`https://www.api.whalter.com.br/blog/posts/${params.catSlug}/${params.postId}`); 
         if (response.data && response.data.post) {
           setPost(response.data.post);
         } else {

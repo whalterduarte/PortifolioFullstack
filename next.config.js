@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: ["https://galleryportwhalter.s3.sa-east-1.amazonaws.com"],
+    domains: ["https://wwww.api.whalter.com.br"],
   },
   experimental: { esmExternals: true },
   typescript: {

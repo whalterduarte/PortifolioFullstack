@@ -1,3 +1,4 @@
+/*
 import NextAuth, { NextAuthOptions } from "next-auth"
 import CredentialsProvider from 'next-auth/providers/credentials'
 
@@ -11,7 +12,7 @@ export const nextAuthOptions: NextAuthOptions = {
      },
 
      async authorize(credentials, req) {
-       const response = await fetch(`https://api-whalter.vercel.app/login`, {
+       const response = await fetch(`https://www.api.whalter.com.br/login`, {
          method: 'POST',
          headers: {
            'Content-type': 'application/json'
@@ -53,3 +54,4 @@ export const nextAuthOptions: NextAuthOptions = {
 const handler = NextAuth(nextAuthOptions)
 
 export { handler as GET, handler as POST }
+*/

@@ -23,7 +23,7 @@ const Tech: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://api-whalter.vercel.app/blog/posts/tech`);
+        const response = await axios.get(`https://www.api.whalter.com.br/blog/posts/tech`);
         setPosts(response.data.posts);
       } catch (error) {
         console.error('Erro ao buscar dados:', error)

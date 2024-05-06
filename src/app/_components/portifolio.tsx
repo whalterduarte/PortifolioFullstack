@@ -9,6 +9,8 @@ import {  GitHubIcon } from '@/components/social-icons'
 import { project } from '@/types/project'
 import Link from 'next/link'
 import axios from 'axios'
+require('dotenv').config()
+const apiUrl = process.env.API;
 
 const Portifolio: React.FC  = () => {
   const [projects, setProjects] = useState<project[]>([])
@@ -17,7 +19,7 @@ const Portifolio: React.FC  = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get<{ projects: project[] }>(`https://api-whalter.vercel.app/projects`)
+        const response = await axios.get<{ projects: project[] }>(`https://www.api.whalter.com.br/projects`)
         
         setProjects(response.data.projects);
       } catch (error) {

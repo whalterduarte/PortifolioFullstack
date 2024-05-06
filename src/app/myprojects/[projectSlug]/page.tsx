@@ -24,7 +24,7 @@ const Details = ({ params }: Props) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://api-whalter.vercel.app/project/${params.projectSlug}`)
+        const response = await axios.get(`https://www.api.whalter.com.br/project/${params.projectSlug}`)
         const projectData = response.data.project;
         setProject(projectData);
         setLoading(false);
